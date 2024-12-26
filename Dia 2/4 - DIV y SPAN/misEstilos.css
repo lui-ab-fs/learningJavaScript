@@ -1,0 +1,9 @@
+.calculo{
+    font-family: monospace;
+    background-color: gainsboro;
+}
+
+.resultado{
+    color: red;
+    font-weight: bold;
+}
