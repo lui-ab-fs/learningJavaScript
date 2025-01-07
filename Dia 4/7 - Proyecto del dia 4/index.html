@@ -1,34 +1,28 @@
 <!DOCTYPE html>
     <head>
         <title>Calculadora</title>
+        <script src="misScripts.js"></script>
     </head>
     <body>
-        <input type="text" id="numero1">
-        <input type="text" id="numero2">
-        <input type="text" id="numeroResultado">
-        <h2>Resultado: <span id="resultadoFinal">---</span></h2> 
-        <button onclick="suma()">Suma</button>
-        <button onclick="resta()">Resta</button>
-        <button onclick="multiplicacion()">Multiplicación</button>
-        <button onclick="divicion()">División</button>
-        <button onclick="raizCuadrada()">Raíz cuadrada</button>
+        <input type="text" id="primerNumero">
+        <input type="text" id="segundoNumero">
+        <br><br>
+        <button onclick="sumar()">Suma</button>
+        <button onclick="restar()">Resta</button>
+        <button onclick="multiplicar()">Multiplicación</button>
+        <button onclick="dividir()">División</button>
+        <br><br>
+        <button onclick="raizCuadrada()">Raíz Cuadrada</button>
         <button onclick="potencia()">Potencia</button>
-        <button onclick="valorAbsoluto()">Valor absoluto</button>
-        <button onclick="aleatorio()">Random</button>
-        <button onclick="redondeo()">Random</button>
-        <button onclick="redondeoFloor()">Floor</button>
-        <button onclick="redondeoCeil()">Ceil</button>
+        <button onclick="valorAbsoluto()">Absoluto</button>
+        <button onclick="random()">Aleatorio</button>
+        <br><br>
+        <button onclick="redondear()">Redondear</button>
+        <button onclick="redondearFloor()">Redondear Floor</button>
+        <button onclick="redondearCeil()">Redondear Ceil</button>
+        <br>
+        <h3>Resultado:</h3>
+        <input type="text" id="resultado">
 
-        <script>
-            function suma(){
-                let elementoNumero1 = document.getElementById("numero1");
-                let elementoNumero2 = document.getElementById("numero2");
-                let elementoTexto = document.getElementById("resultadoFinal");
-
-                calculoSuma = +elementoNumero1 + +elementoNumero2;
-                return calculoSuma;
-                calculoSuma.textContent;
-            }
-        </script>
     </body>
 </html>
