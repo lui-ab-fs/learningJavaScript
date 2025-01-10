@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title>Boletín Estudiantil</title>
+    <script src="misScripts.js"></script>
+</head>
+<body onload="listarNotas()">
+    <h3>Bienvenido al Boletín Estudiantil</h3>
+    <h4>Nombre del estudiante: Luis Fanovich</h4>
+    <h5>Listado de notas</h5>
+    <ul id="listaNotas"></ul>
+    <br>
+    <button onclick="calcularPromedio()">Promedio</button>
+    <button onclick="identificarNotaMasAlta()">Nota más alta</button>
+    <button onclick="identificarAplazo()">Aplazo</button>
+
+    <h5>Promedio: <span id="promedio">---</span></h5>
+    <h5>Nota más alta: <span id="notaMasAlta">---</span></h5>
+    <h5>Aplazo: <span id="aplazo">---</span></h5>
+</body>
+</html>
